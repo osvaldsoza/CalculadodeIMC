@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edt_peso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="20dp"
+        android:hint="Peso"
+        android:inputType="number"
+        android:maxLength="6"
+        android:padding="20dp"
+        android:textColorHint="@color/dark_blue" />
+
+    <EditText
+        android:id="@+id/edt_altura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Altura"
+        android:inputType="numberDecimal"
+        android:maxLength="6"
+        android:padding="20dp"
+        android:textColorHint="@color/dark_blue" />
+
+    <Button
+        android:id="@+id/btn_calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/ligth_blue"
+        android:padding="15dp"
+        android:text="Calcular IMC"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_mensagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:textColor="@color/dark_blue"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
