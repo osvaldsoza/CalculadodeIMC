@@ -3,6 +3,7 @@ package br.com.osvaldsoza.calculadoradeimc
 
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import br.com.osvaldsoza.calculadoradeimc.databinding.ActivityMainBinding
 import java.text.DecimalFormat
@@ -56,5 +57,16 @@ class MainActivity : AppCompatActivity() {
         val inflate = menuInflater
         inflate.inflate(R.menu.menu_principal, menu)
         return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.reset -> {
+                binding.edtPeso.setText("")
+                binding.edtAltura.setText("")
+                binding.txtMensagem.setText("")
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 }
